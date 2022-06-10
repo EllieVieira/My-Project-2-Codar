@@ -19,7 +19,7 @@ body{
     padding: 20px;
 }
 
-header, .sec-um{
+header{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -47,21 +47,19 @@ nav a{
 
 .sec-um{
     display: flex;
-    justify-content: center;
-    margin: 50px 100px;
+    width: 100vw;
+    margin: 50px;
 }
 
 .image{
-    width: 50%;
+    width: 100%;
     margin: auto;
     
 }
 
 .p-text{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-self: center;
+    display: block;
+    width: 100%;
 }
 
 .normal-text{
