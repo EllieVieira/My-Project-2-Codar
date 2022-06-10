@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
 *{
     margin: 0;
@@ -8,12 +8,12 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-
 }
+
 .h1-title{
     color: #D6000D;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 3rem;
     font-style: italic;
     margin: 20px;
     padding: 20px;
@@ -28,31 +28,60 @@ header, .sec-um{
 nav{
     display: inline-block;
     margin: 20px;
-    
 }
 
 nav a{
-    padding: 20px;
+    padding: 0 20px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 400;
+    color: #010101;
+    font-size: 1.2rem;
 }
 
-.btn-log{
+.btn-log, .orcamento{
     background-color: #D6000D;
     color: white;
     border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px 50px;
+}
+
+.sec-um{
+    display: flex;
+    justify-content: center;
+    margin: 50px 100px;
+}
+
+.image{
+    width: 50%;
+    margin: auto;
+    
 }
 
 .p-text{
     display: flex;
     flex-direction: column;
     width: 50%;
+    align-self: center;
+}
+
+.normal-text{
+    font-weight: bold;
+    font-size: 1.5rem;
+
 
 }
 
-.image{
-    width: 50%;
-    margin: auto;
+.red-text{
+    color: #D6000D;
+    font-weight: bold;
+    font-size: 3.6rem;
+    margin-bottom: 50px;
+}
+
+.orcamento{
+    border: none;
+    width: 300px;
+    font-weight: 700;
+    font-size: 1.3rem;
+
 }
