@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-.h1-title{
+.h1-title {
     color: #D6000D;
     font-weight: bold;
     font-size: 3rem;
@@ -18,18 +18,18 @@ body{
     margin: 20px 40px;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
-nav{
+nav {
     display: inline-block;
     margin: 20px;
 }
 
-nav a{
+nav a {
     padding: 0 20px;
     text-decoration: none;
     font-weight: 400;
@@ -37,14 +37,30 @@ nav a{
     font-size: 1.4rem;
 }
 
-.btn-log, .orcamento{
+nav a:hover {
+    color: #D6000D;
+}
+
+.btn-log,
+.orcamento {
     background-color: #D6000D;
     color: white;
     border-radius: 10px;
     padding: 10px 60px;
 }
 
-.sec-um, .sec-dois{
+.btn-log:hover,
+.orcamento:hover,
+.ligamos:hover {
+    background-color: #F5C2C5;
+    color: #D6000D;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.sec-um,
+.sec-dois {
     display: flex;
     margin-top: 100px;
     align-items: center;
@@ -52,59 +68,120 @@ nav a{
     width: 100%;
 }
 
-.image, .list{
+.image,
+.list {
     width: 100%;
     display: flex;
     justify-content: center;
-    
 }
 
-.p-text, .image-dois{
+.p-text,
+.image-dois {
     display: block;
     text-align: left;
     width: 100%;
-    
 }
 
-.normal-text{
+.normal-text {
     font-weight: bold;
     font-size: 1.6rem;
-
 }
 
-.red-text{
+.red-text {
     color: #D6000D;
     font-weight: bold;
     font-size: 4rem;
     margin-bottom: 50px;
 }
 
-.orcamento{
+.orcamento {
     border: none;
     width: 400px;
     font-weight: 700;
     font-size: 1.3rem;
-
 }
 
-ul li{
+ul li {
     margin: 15px;
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
 }
 
-i{
+i {
     color: #D6000D;
     font-size: 20px;
 }
 
-.sec-tres{
+.sec-tres {
     display: flex;
-    text-align: left;
-    margin-top: 100px;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 100px;
 }
 
-.info{
+.info {
     display: block;
+}
+
+.input-cel {
+    line-height: 20px;
+    background-color: #DBDBDB;
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    margin: 10px 0;
+    width: 300px;
+    font-size: 1.2rem;
+}
+
+.ligamos {
+    background-color: #D6000D;
+    color: #ffffff;
+    border: none;
+    line-height: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 250px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.comentarios {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+    height: 180px;
+}
+
+.comentario-um,
+.comentario-dois {
+    background-color: #DBDBDB;
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.nome {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.empresa {
+    font-weight: bold;
+}
+
+.circle {
+    background-color: #D6000D;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
 }
