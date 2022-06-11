@@ -15,11 +15,10 @@ body{
     font-weight: bold;
     font-size: 3rem;
     font-style: italic;
-    margin: 20px;
-    padding: 20px;
+    margin: 20px 40px;
 }
 
-header, .sec-um{
+header{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -35,53 +34,77 @@ nav a{
     text-decoration: none;
     font-weight: 400;
     color: #010101;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .btn-log, .orcamento{
     background-color: #D6000D;
     color: white;
     border-radius: 10px;
-    padding: 10px 50px;
+    padding: 10px 60px;
 }
 
-.sec-um{
+.sec-um, .sec-dois{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.image, .list{
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin: 50px 100px;
-}
-
-.image{
-    width: 50%;
-    margin: auto;
     
 }
 
-.p-text{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-self: center;
+.p-text, .image-dois{
+    display: block;
+    text-align: left;
+    width: 100%;
+    
 }
 
 .normal-text{
     font-weight: bold;
-    font-size: 1.5rem;
-
+    font-size: 1.6rem;
 
 }
 
 .red-text{
     color: #D6000D;
     font-weight: bold;
-    font-size: 3.6rem;
+    font-size: 4rem;
     margin-bottom: 50px;
 }
 
 .orcamento{
     border: none;
-    width: 300px;
+    width: 400px;
     font-weight: 700;
     font-size: 1.3rem;
 
+}
+
+ul li{
+    margin: 15px;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+i{
+    color: #D6000D;
+    font-size: 20px;
+}
+
+.sec-tres{
+    display: flex;
+    text-align: left;
+    margin-top: 100px;
+}
+
+.info{
+    display: block;
 }
