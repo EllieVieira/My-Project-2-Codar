@@ -143,7 +143,7 @@ i {
     border-radius: 10px;
     padding: 20px;
     margin: 10px 0;
-    width: 250px;
+    width: 300px;
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -161,6 +161,7 @@ i {
     margin: 0 10px;
     padding: 20px;
     border-radius: 10px;
+    width: 50%;
 }
 
 .nome {
@@ -184,4 +185,110 @@ i {
 footer {
     background-color: #000000;
     color: #ffffff;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+footer>div {
+    margin: 50px;
+}
+
+.div-1,
+.div-2,
+.div-3,
+.div-4 {
+    width: 200px;
+}
+
+.codar {
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.div-3>p {
+    margin-bottom: 15px;
+}
+
+.div-3 a {
+    color: #ffffff;
+}
+
+.sobre,
+.contato,
+.redes {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-brands {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 830px) {
+    header {
+        display: block;
+    }
+
+    .h1-title {
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-log {
+        display: none;
+    }
+
+    .sec-um {
+        display: grid;
+        grid-template-areas: 'img1'
+            'txt1';
+    }
+
+    .image {
+        grid-area: img1;
+        margin-bottom: 50px;
+    }
+
+    .p-text {
+        grid-area: txt1;
+        text-align: center;
+    }
+
+    .sec-dois {
+        display: grid;
+        grid-template-areas: 'img2'
+            'txt2';
+    }
+
+    .image-dois {
+        grid-area: img2;
+    }
+
+    .list {
+        grid-area: txt2;
+        margin-bottom: 20px;
+    }
+
+    .sec-tres,
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
