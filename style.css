@@ -117,7 +117,7 @@ i {
     display: flex;
     width: 100%;
     flex-direction: column;
-    padding: 0 100px;
+    padding: 0 200px 200px;
 }
 
 .info {
@@ -167,6 +167,7 @@ i {
 .nome {
     font-size: 1.5rem;
     font-weight: 700;
+    padding-top: 10px;
 }
 
 .empresa {
@@ -234,6 +235,7 @@ footer>div {
     font-size: 30px;
 }
 
+
 @media screen and (max-width: 830px) {
     header {
         display: block;
@@ -280,15 +282,37 @@ footer>div {
 
     .list {
         grid-area: txt2;
-        margin-bottom: 20px;
     }
 
-    .sec-tres,
-    .info {
+    .sec-tres{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-top: 50px;
+        width: 100%;
     }
 
+    p.normal-text{
+        font-size: 1.4rem;
+        white-space: nowrap;
+    }
+
+    .comentarios{
+        display: grid;
+        grid-template-areas: 'coment1'
+                'coment2';
+        width: 100%;
+        }
+
+    .comentario-um{
+        grid-area: 'coment1';
+    }
+
+    .comentario-dois{
+        grid-area: 'coment2';
+    }
 }
+
+    
+
