@@ -284,7 +284,7 @@ footer>div {
         grid-area: txt2;
     }
 
-    .sec-tres{
+    .sec-tres {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -293,26 +293,46 @@ footer>div {
         width: 100%;
     }
 
-    p.normal-text{
+    p.normal-text {
         font-size: 1.4rem;
         white-space: nowrap;
     }
 
-    .comentarios{
+    .comentarios {
         display: grid;
         grid-template-areas: 'coment1'
-                'coment2';
+            'coment2';
+        margin-top: -100px;
+    }
+
+    .comentario-um {
         width: 100%;
-        }
-
-    .comentario-um{
-        grid-area: 'coment1';
+        grid-area: coment1;
+        display: flex;
+        margin-bottom: 20px;
     }
 
-    .comentario-dois{
-        grid-area: 'coment2';
+    .comentario-dois {
+        width: 100%;
+        grid-area: coment2;
+        display: flex;
     }
+
+    .div-circle {
+        float: left;
+    }
+
+    .text-coment {
+        float: right;
+    }
+
+    .nome {}
+
+    .empresa {}
+
+    footer {
+        width: 100%;
+    }
+
+
 }
-
-    
-
