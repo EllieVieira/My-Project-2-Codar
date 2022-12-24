@@ -237,6 +237,8 @@ footer>div {
 
 
 @media screen and (max-width: 830px) {
+
+
     header {
         display: block;
     }
@@ -303,6 +305,8 @@ footer>div {
         grid-template-areas: 'coment1'
             'coment2';
         margin-top: -100px;
+        height: 100%;
+
     }
 
     .comentario-um {
@@ -326,12 +330,53 @@ footer>div {
         float: right;
     }
 
-    .nome {}
+    .nome {
+        font-weight: 100;
+    }
 
-    .empresa {}
 
     footer {
         width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-areas: 'codar' 'sobre' 'contato' 'redes';
+        justify-content: left;
+    }
+
+    .div-1 {
+        grid-area: codar;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .div-2 {
+        grid-area: sobre;
+        margin-top: -30px;
+        width: 200px;
+
+    }
+
+    .div-3 {
+        margin-top: -30px;
+        width: 200px;
+    }
+
+    .div-4 {
+        margin-top: -30px;
+        width: 200px;
+
+
+    }
+
+    .codar {
+        font-size: 2.5rem;
+    }
+
+
+    .sobre {
+        text-align: start;
     }
 
 
