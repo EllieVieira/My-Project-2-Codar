@@ -238,7 +238,6 @@ footer>div {
 
 @media screen and (max-width: 830px) {
 
-
     header {
         display: block;
     }
@@ -260,6 +259,10 @@ footer>div {
         display: grid;
         grid-template-areas: 'img1'
             'txt1';
+    }
+
+    .red-text {
+        font-size: 3rem;
     }
 
     .image {
@@ -306,7 +309,6 @@ footer>div {
             'coment2';
         margin-top: -100px;
         height: 100%;
-
     }
 
     .comentario-um {
@@ -334,7 +336,6 @@ footer>div {
         font-weight: 100;
     }
 
-
     footer {
         width: 100%;
         height: 100%;
@@ -348,36 +349,26 @@ footer>div {
         text-align: center;
         justify-content: center;
         width: 100%;
-
     }
 
     .div-2 {
         grid-area: sobre;
         margin-top: -30px;
         width: 200px;
-
     }
 
-    .div-3 {
-        margin-top: -30px;
-        width: 200px;
-    }
-
+    .div-3,
     .div-4 {
         margin-top: -30px;
         width: 200px;
-
-
     }
 
     .codar {
         font-size: 2.5rem;
     }
 
-
     .sobre {
         text-align: start;
     }
-
 
 }
