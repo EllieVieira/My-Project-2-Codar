@@ -10,6 +10,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .h1-title {
     color: #D6000D;
     font-weight: bold;
@@ -51,12 +55,12 @@ nav a:hover {
 
 .btn-log:hover,
 .orcamento:hover,
-.ligamos:hover {
+.ligamos:hover,
+.btn-log-page:hover {
     background-color: #F5C2C5;
     color: #D6000D;
     transition: 0.3s;
     cursor: pointer;
-
 }
 
 .sec-um,
@@ -124,7 +128,8 @@ i {
     display: block;
 }
 
-.input-cel {
+.input-cel,
+.input-log {
     line-height: 20px;
     background-color: #DBDBDB;
     border-radius: 10px;
@@ -235,6 +240,44 @@ footer>div {
     font-size: 30px;
 }
 
+/* login page */
+
+.sec-log {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.login {
+    background-color: #f3b4b8;
+    border-radius: 10px;
+    width: 50vh;
+    height: 50vh;
+    color: #010101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-log {
+    background-color: rgb(230, 230, 230);
+}
+
+.btn-log-page {
+    margin: 10px 0;
+    width: 250px;
+    font-size: 1.2rem;
+    background-color: #D6000D;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 60px;
+}
+
+/* Login page end */
 
 @media screen and (max-width: 830px) {
 
