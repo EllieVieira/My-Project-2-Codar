@@ -240,6 +240,11 @@ footer>div {
     font-size: 30px;
 }
 
+.fa-brands:hover {
+    color: #F5C2C5;
+    transition: 0.3s;
+}
+
 /* login page */
 
 .sec-log {
@@ -373,6 +378,7 @@ footer>div {
 
     .text-coment {
         float: right;
+        text-align: justify;
     }
 
     .nome {
@@ -410,7 +416,7 @@ footer>div {
         font-size: 2.5rem;
     }
 
-    .sobre {
+    .div-1 p {
         text-align: start;
     }
 
