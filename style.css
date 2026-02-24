@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 
 * {
     margin: 0;
@@ -29,9 +30,17 @@ header {
 }
 
 nav {
-    display: inline-block;
+    display: flex;
     margin: 20px;
 }
+
+.nav-buttons,
+.login-box {
+    display: flex;
+    width: auto;
+}
+
+
 
 nav a {
     padding: 0 20px;
@@ -43,6 +52,10 @@ nav a {
 
 nav a:hover {
     color: #D6000D;
+}
+
+hr {
+    display: none;
 }
 
 .btn-log,
@@ -73,17 +86,28 @@ nav a:hover {
 }
 
 .image,
+.list,
+.p-text,
+.image-dois {
+    flex: 1;
+    min-width: 0;
+}
+
+.image,
 .list {
-    width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.p-text,
-.image-dois {
-    display: block;
-    text-align: left;
+.image img,
+.image-dois img {
     width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.p-text {
+    text-align: left;
 }
 
 .normal-text {
@@ -100,7 +124,7 @@ nav a:hover {
 
 .orcamento {
     border: none;
-    width: 400px;
+    /* width: 400px; */
     font-weight: 700;
     font-size: 1.3rem;
 }
@@ -136,7 +160,7 @@ i {
     border: none;
     padding: 20px;
     margin: 10px 0;
-    width: 300px;
+    width: auto;
     font-size: 1.2rem;
 }
 
@@ -191,21 +215,22 @@ i {
 footer {
     background-color: #000000;
     color: #ffffff;
-    height: 250px;
+    height: 300px;
     display: flex;
     justify-content: space-around;
     align-items: baseline;
 }
 
 footer>div {
-    margin: 50px;
+    padding: 50px 40px;
+
 }
 
 .div-1,
 .div-2,
 .div-3,
 .div-4 {
-    width: 200px;
+    width: 300px;
 }
 
 .codar {
@@ -284,7 +309,10 @@ footer>div {
 
 /* Login page end */
 
-@media screen and (max-width: 830px) {
+
+/* Responsividade */
+
+@media screen and (max-width: 850px) {
 
     header {
         display: block;
@@ -292,16 +320,38 @@ footer>div {
 
     .h1-title {
         text-align: center;
+        margin: 20px 40px;
     }
 
     nav {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: column;
     }
 
-    .btn-log {
-        display: none;
+    img {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        display: block;
     }
+
+    .nav-buttons,
+    .login-box {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+
+    }
+
+    /* .nav-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-log {
+        padding: 0 20px;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 1.4rem;
+    } */
 
     .sec-um {
         display: grid;
@@ -316,6 +366,7 @@ footer>div {
     .image {
         grid-area: img1;
         margin-bottom: 50px;
+        width: 100%;
     }
 
     .p-text {
@@ -331,6 +382,7 @@ footer>div {
 
     .image-dois {
         grid-area: img2;
+        width: 100%;
     }
 
     .list {
@@ -344,6 +396,10 @@ footer>div {
         align-items: center;
         padding-top: 50px;
         width: 100%;
+    }
+
+    .input-cel {
+        width: 300px;
     }
 
     p.normal-text {
@@ -386,7 +442,152 @@ footer>div {
     }
 
     footer {
+        /* width: 100vw; */
+        height: 100%;
+        display: grid;
+        grid-template-areas: 'codar' 'sobre' 'contato' 'redes';
+        justify-content: left;
+    }
+
+    .div-1 {
+        grid-area: codar;
+        text-align: center;
+        justify-content: center;
         width: 100%;
+    }
+
+    .div-2 {
+        grid-area: sobre;
+        margin-top: -30px;
+        width: 200px;
+    }
+
+    .div-3,
+    .div-4 {
+        margin-top: -30px;
+        width: 200px;
+    }
+
+    .codar {
+        font-size: 2.5rem;
+    }
+
+    .div-1 p {
+        text-align: start;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+
+    nav {
+        margin: 1px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav a {
+        padding: 5px;
+        /* border-right: 2px solid #d6000d; */
+    }
+
+    hr {
+        display: block;
+    }
+
+    .btn-log {
+        padding: 0 50px;
+    }
+
+    .sec-um {
+        display: grid;
+        grid-template-areas: 'img1'
+            'txt1';
+    }
+
+    .red-text {
+        font-size: 3rem;
+    }
+
+    .image {
+        grid-area: img1;
+        margin-bottom: 50px;
+    }
+
+    .p-text {
+        grid-area: txt1;
+        text-align: center;
+    }
+
+    .sec-dois {
+        display: grid;
+        grid-template-areas: 'img2'
+            'txt2';
+    }
+
+    .image-dois {
+        grid-area: img2;
+    }
+
+    .list {
+        grid-area: txt2;
+    }
+
+    .sec-tres {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 10px;
+
+    }
+
+    p.normal-text {
+        font-size: 1.4rem;
+        white-space: wrap;
+    }
+
+    .orcamento {
+        margin: 0 10px;
+    }
+
+    .comentarios {
+        display: grid;
+        grid-template-areas: 'coment1'
+            'coment2';
+        margin-top: -100px;
+        height: 100%;
+    }
+
+    .comentario-um {
+        width: 100%;
+        grid-area: coment1;
+        display: flex;
+        margin: 70px 0;
+    }
+
+    .comentario-dois {
+        width: 100%;
+        grid-area: coment2;
+        display: flex;
+    }
+
+    .div-circle {
+        float: left;
+    }
+
+    .text-coment {
+        float: right;
+        text-align: justify;
+    }
+
+    .nome {
+        font-weight: 100;
+    }
+
+    footer {
+        width: 100vw;
         height: 100%;
         display: grid;
         grid-template-areas: 'codar' 'sobre' 'contato' 'redes';
